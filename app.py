@@ -1,7 +1,7 @@
 from shiny import App, render, ui, reactive
 
 app_ui = ui.page_fluid(
-    ui.h2("Reactivity"),
+    ui.h2("Reactivity - Test"),
     ui.input_slider("n", "N", 0, 100, 20),
     ui.output_text_verbatim("result1"),
     ui.output_text_verbatim("result2"),
@@ -26,3 +26,4 @@ def server(input, output, session):
 
 
 app = App(app_ui, server)
+
